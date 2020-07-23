@@ -3,6 +3,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:go/board.dart';
 import 'package:go/game.dart';
+import 'package:go/graph.dart';
 import 'package:go/play.dart';
 
 void main() => runApp(MyApp());
@@ -136,7 +137,7 @@ class _MyHomePageState extends State<MyHomePage> {
           settings,
           tile,
           Play(),
-          tile,
+          GradientGraph(),
           tile,
 
         ],

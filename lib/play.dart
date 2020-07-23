@@ -28,7 +28,7 @@ class _PlayState extends State<Play> {
     _controller.dispose();
     super.dispose();
   }
-//test
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -85,6 +85,7 @@ class _PlayState extends State<Play> {
                 controller: _listController,
                 scrollDirection: Axis.vertical,
                 physics: BouncingScrollPhysics(),
+                pageSnapping: false,
                 itemBuilder: (BuildContext context, int index) {
                   return Container(
                       margin: EdgeInsets.all(10),
