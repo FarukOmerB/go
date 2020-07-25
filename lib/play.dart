@@ -10,7 +10,7 @@ class Play extends StatefulWidget {
 
 class _PlayState extends State<Play> {
   static Color theme = new Color.fromARGB(255, 35, 35, 35);
-  GoBoard _goBoard = GoBoard(theme, 10, 1);
+  GoBoard _goBoard = GoBoard(10, TableTheme(style:1,background: Color.fromARGB(255, 35, 35, 35),edgeColor: new Color.fromARGB(255, 57, 57, 57), insideColor: new Color.fromARGB(255, 43, 42, 42), lineColor: new Color.fromARGB(255, 30, 30, 30)));
   PageController _controller;
   PageController _listController;
   int currentPage;
